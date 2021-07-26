@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
 
 * {
     margin: 0;
@@ -8,14 +8,14 @@
 }
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #1b1717;
     background-color: #eeeeee;
 }
 a,
 a:visited {
     text-decoration: none;
-    color: #ce1212;
+    color: white;
 }
 
 .flex {
@@ -40,11 +40,23 @@ a:visited {
 }
 
 .hero {
+    margin: 3rem 0;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.hero > p {
+    font-size: 2rem;
+    font-weight: 400;
+    max-width: 25rem;
+}
+.hero > img {
+    max-width: 35rem;
 }
 
 button {
     background-color: #2691d9;
+    /* background-color: #3a3768; */
     font-family: unset;
     font-size: 1.2rem;
     cursor: pointer;
@@ -68,10 +80,45 @@ button:hover {
 }
 
 .category-item {
+    text-align: center;
     margin: 2rem;
-    padding: 5rem;
+    width: 22rem;
     background-color: #ce1212;
     border-radius: 8px;
     color: white;
     font-size: 2rem;
+}
+.category-item > a {
+    display: block;
+    padding: 5rem;
+}
+
+.category > li:nth-child(1) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('/images/cse.png');
+    background-size: cover;
+}
+
+.category > li:nth-child(2) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('/images/ece.png');
+    background-size: cover;
+}
+
+.category > li:nth-child(3) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('/images/mech.jpg');
+    background-size: cover;
+}
+
+.category > li:nth-child(4) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('/images/mech.jpg');
+    background-size: cover;
+}
+
+.category > li:nth-child(5) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('/images/eee.jpg');
+    background-size: cover;
 }
