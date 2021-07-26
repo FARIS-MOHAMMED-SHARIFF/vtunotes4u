@@ -1,15 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="index.css" />
+        <title>VtuNotes4U</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css"/>
-    <title>VtuNotes4U</title>
-</head>
-<button onclick="location.href='login.html'">View All Customers</button>
-<button onclick="location.href='logout.php'">Logout</button>
-<body>
-    
-</body>
+    <body>
+        <header>
+            <nav class="flex navbar">
+                <a href="index.html"
+                    ><div>
+                        VtuNotes<span style="color: #2691d9">4</span>U
+                    </div></a
+                >
+                <div>
+                    <button onclick="location.href='login.html'">Login</button>
+                </div>
+            </nav>
+        </header>
+
+        <div class="container">
+            <div class="hero">
+                <p>
+                    One stop destination for all the latest VTU notes, model
+                    question papers and all other resources.
+                </p>
+                <img src="images/books.svg" alt="" />
+            </div>
+            <h2>Choose Category</h2>
+            <div class="content">
+                <ul class="category flex">
+                    <li class="category-item"><a href="#">CSE</a></li>
+                    <li class="category-item"><a href="#">ECE</a></li>
+                    <li class="category-item"><a href="#">MECH</a></li>
+                    <li class="category-item"><a href="#">CIVIL</a></li>
+                    <li class="category-item"><a href="#">EEE</a></li>
+                </ul>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
 </html>

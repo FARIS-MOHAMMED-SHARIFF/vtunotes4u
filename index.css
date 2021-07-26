@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #1b1717;
+    background-color: #eeeeee;
+}
+a,
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    padding: 1.5rem 4rem;
+}
+
+.navbar {
+    font-size: 2rem;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    padding: 1rem;
+    color: black;
+    box-shadow: 0 1px 15px 1px rgba(0, 0, 0, 0.2);
+}
+.navbar > a {
+    color: black;
+}
+
+.hero {
+    margin: 3rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.hero > p {
+    font-size: 2rem;
+    font-weight: 400;
+    max-width: 25rem;
+}
+.hero > img {
+    max-width: 35rem;
+}
+
+button {
+    background-color: #2691d9;
+    /* background-color: #3a3768; */
+    font-family: unset;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+    color: white;
+    border-radius: 5px;
+}
+button:hover {
+    opacity: 0.85;
+}
+
+.content {
+    padding: 2rem;
+}
+
+.category {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.category-item {
+    text-align: center;
+    margin: 2rem;
+    width: 22rem;
+    background-color: #ce1212;
+    border-radius: 8px;
+    color: white;
+    font-size: 2rem;
+}
+.category-item > a {
+    display: block;
+    padding: 5rem;
+}
+
+.category > li:nth-child(1) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('images/cse.png');
+    background-size: cover;
+}
+
+.category > li:nth-child(2) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('images/ece.png');
+    background-size: cover;
+}
+
+.category > li:nth-child(3) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('images/mech.jpg');
+    background-size: cover;
+}
+
+.category > li:nth-child(4) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('images/civil.jpg');
+    background-size: cover;
+}
+
+.category > li:nth-child(5) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('images/eee.jpg');
+    background-size: cover;
+}
