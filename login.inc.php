@@ -1,7 +1,7 @@
 <?php
     session_start();
     include_once "db.php";
-	if(isset($_POST["LoggedIn"]))
+	if(isset($_POST["login"]))
 	{
 		$email = $_POST["email"];
 		$password = $_POST["passwd"];  
@@ -11,11 +11,10 @@
 		$email = mysqli_real_escape_string($conn, $email);  
 		$password = mysqli_real_escape_string($conn, $password);  
 	
-		$sql = "SELECT * FROM `users` where email='$email' and pasword='$password' ";  
+		$sql = "SELECT * FROM users where email='$email' and pasword='$password' ";  
         $result = mysqli_query($conn, $sql);  
         $row = mysqli_fetch_assoc($result);  
         $count =mysqli_num_rows($result);
-		
 		
 		if($count == 1)
 		{  
@@ -25,23 +24,10 @@
 		else{  
 			echo "<script>
             window.location.href='login.html';
-            alert('Login failed.Invalid Email or password! ');
+            alert('Login failed. Invalid Email or password! ');
             </script>";
             exit();
 			
 		}  
 	}  
 ?>
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>login</title>
-</head>
-nothing herer
-<body>
-	
-</body>
-</html> -->
