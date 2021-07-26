@@ -95,30 +95,30 @@ button:hover {
 
 .category > li:nth-child(1) {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url('/images/cse.png');
+        url('images/cse.png');
     background-size: cover;
 }
 
 .category > li:nth-child(2) {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url('/images/ece.png');
+        url('images/ece.png');
     background-size: cover;
 }
 
 .category > li:nth-child(3) {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url('/images/mech.jpg');
+        url('images/mech.jpg');
     background-size: cover;
 }
 
 .category > li:nth-child(4) {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url('/images/civil.jpg');
+        url('images/civil.jpg');
     background-size: cover;
 }
 
 .category > li:nth-child(5) {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url('/images/eee.jpg');
+        url('images/eee.jpg');
     background-size: cover;
 }

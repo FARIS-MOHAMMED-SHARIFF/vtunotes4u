@@ -11,17 +11,17 @@
 
 <body>
     <div class="loginContainer">
-        <form aciton="">
+        <form action="signup.inc.php" method="post">
             <h1>Sign up</h1>
             <div class="form-group">
-                <label for="">Email id</label>
-                <input type="text" class="form-control" required>
+                <label for="email">Email id</label>
+                <input id="email" type="email" name="email" class="form-control" required>
             </div>
             <div class="form-group">
-                <label for="">Password</label>
-                <input type="password" class="form-control" required>
+                <label for="password">Password</label>
+                <input id="password" type="password" name="passwd" class="form-control" required>
             </div>
-            <input type="submit" class="btn" value="Sign in">
+            <input type="submit" class="btn" name="Signup" value="Sign in">
             <div class="signup_link">
                Alredy a member? <a href="login.html">login</a>
             </div>
