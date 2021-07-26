@@ -21,6 +21,9 @@ a:visited {
 .flex {
     display: flex;
 }
+.flex-jc-c {
+    justify-content: center;
+}
 
 .container {
     padding: 1.5rem 4rem;
@@ -53,10 +56,11 @@ a:visited {
 .hero > img {
     max-width: 35rem;
 }
-
+.icon {
+    width: 2rem;
+}
 button {
     background-color: #2691d9;
-    /* background-color: #3a3768; */
     font-family: unset;
     font-size: 1.2rem;
     cursor: pointer;
@@ -121,4 +125,61 @@ button:hover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
         url('images/eee.jpg');
     background-size: cover;
+}
+
+.semester {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.semester-item {
+    text-align: center;
+    margin: 2rem;
+    width: 18rem;
+    background-color: #2691d9;
+    border-radius: 8px;
+    color: white;
+    font-size: 2rem;
+}
+.semester-item > a {
+    display: block;
+    padding: 5rem;
+}
+
+.accordion {
+    background-color: #2691d9;
+    color: #eee;
+    cursor: pointer;
+    padding: 18px;
+    width: 50%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 100ms;
+    margin: 2px 1rem;
+}
+
+.active,
+.accordion:hover {
+    background-color: #2f5e7a;
+}
+
+.links {
+    justify-content: space-around;
+    margin: 0 1rem;
+    padding: 1rem 1.5rem;
+    display: none;
+    width: 50%;
+    background-color: white;
+    overflow: hidden;
+}
+.links > a {
+    margin: 5px;
+    display: block;
+    color: #2691d9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
