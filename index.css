@@ -148,6 +148,16 @@ button:hover {
     display: block;
     padding: 5rem;
 }
+.container1{
+    padding: 1.5rem 4rem;
+    }
+.content1{
+    padding: 2rem;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
 
 .accordion {
     background-color: #2691d9;

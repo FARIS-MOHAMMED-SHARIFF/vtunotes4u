@@ -17,7 +17,7 @@
 		if($result)
 		{  
 			$_SESSION["favsport"] = "MMA";
-			header("location:index.html");  			
+			header("location:index.php");  			
 		}  
 		else{  
 			echo "<script>
@@ -27,5 +27,4 @@
             exit();
 			
 		}  
-	}  
-?>
+	}

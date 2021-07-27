@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jul 27, 2021 at 05:18 AM
+-- Generation Time: Jul 27, 2021 at 10:35 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.2.34
 
@@ -30,36 +30,38 @@ SET time_zone = "+00:00";
 CREATE TABLE `subjects` (
   `name` varchar(255) NOT NULL,
   `branch` varchar(255) NOT NULL,
-  `sem` int(1) NOT NULL
+  `sem` int(1) NOT NULL,
+  `file_name` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `subjects`
 --
 
-INSERT INTO `subjects` (`name`, `branch`, `sem`) VALUES
-('Transform Calculus, Fourier Series\r\nAnd Numerical Techniques', 'cse', 3),
-('Data Structures and Applications', 'cse', 3),
-('Analog and Digital Electronics', 'cse', 3),
-('Computer Organization', 'cse', 3),
-('Software Engineering', 'cse', 3),
-('Discrete Mathematical Structures', 'cse', 3),
-('Complex Analysis,Probability and statistical methods', 'cse', 4),
-('Design and Analysis of Algorithms', 'cse', 4),
-('Operating Systems', 'cse', 4),
-('Microcontroller and Embedded Systems', 'cse', 4),
-('Object Oriented Concepts', 'cse', 4),
-('Data Communication', 'cse', 4),
-('Management and Entrepreneurship For IT Industry', 'cse', 5),
-('Computer Networks and Security', 'cse', 5),
-('Database Management System', 'cse', 5),
-('Automata Theory and Computability', 'cse', 5),
-('Application Development using Python', 'cse', 5),
-('Unix Programming', 'cse', 5),
-('System Software and Compilers', 'cse', 6),
-('Computer Graphics and Visualization', 'cse', 6),
-('Web Technology and its Applications ', 'cse', 6),
-('Data Mining and Data Warehousing', 'cse', 6);
+INSERT INTO `subjects` (`name`, `branch`, `sem`, `file_name`) VALUES
+('Transform Calculus Fourier Series And Numerical Techniques', 'cse', 3, '18CS31'),
+('Data Structures and Applications', 'cse', 3, '18CS32'),
+('Analog and Digital Electronics', 'cse', 3, '18CS33'),
+('Computer Organization', 'cse', 3, '18CS34'),
+('Software Engineering', 'cse', 3, '18CS35'),
+('Discrete Mathematical Structures', 'cse', 3, '18CS36'),
+('Complex Analysis,Probability and statistical methods', 'cse', 4, '18CS41'),
+('Design and Analysis of Algorithms', 'cse', 4, '18CS42'),
+('Operating Systems', 'cse', 4, '18CS43'),
+('Microcontroller and Embedded Systems', 'cse', 4, '18CS44'),
+('Object Oriented Concepts', 'cse', 4, '18CS45'),
+('Data Communication', 'cse', 4, '18CS46'),
+('Management and Entrepreneurship For IT Industry', 'cse', 5, '18CS51'),
+('Computer Networks and Security', 'cse', 5, '18CS52'),
+('Database Management System', 'cse', 5, '18CS53'),
+('Automata Theory and Computability', 'cse', 5, '18CS54'),
+('Application Development using Python', 'cse', 5, '18CS55'),
+('Unix Programming', 'cse', 5, '18CS56'),
+('System Software and Compilers', 'cse', 6, '18CS61'),
+('Computer Graphics and Visualization', 'cse', 6, '18CS62'),
+('Web Technology and its Applications ', 'cse', 6, '18CS63'),
+('Data Mining and Data Warehousing', 'cse', 6, '18CS641'),
+('Advanced Linear Algebra', 'cse', 6, '18CS653');
 
 -- --------------------------------------------------------
 

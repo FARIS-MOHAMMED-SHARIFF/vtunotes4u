@@ -11,6 +11,20 @@ body {
     font-family: 'Montserrat', sans-serif;
     background: #eee;
 }
+button {
+    background-color: #2691d9;
+    font-family: unset;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+    color: white;
+    border-radius: 5px;
+}
+button:hover {
+    opacity: 0.85;
+}
 .loginContainer {
     margin: auto;
     width: 500px;
