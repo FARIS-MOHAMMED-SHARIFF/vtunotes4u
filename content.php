@@ -2,6 +2,8 @@
     include_once "db.php";
     $branch = $_GET['branch'];
     $sem = $_GET['sem'];
+    $path="resources/{$branch}/{$sem}-Sem/Notes/Notes 18CS31.pdf";
+    $path1="resources/{$branch}/{$sem}-Sem/Question Papers/18CS31.pdf";
 
     $sql = "SELECT * FROM `subjects` where branch='$branch' and sem=$sem ";  
     $result = mysqli_query($conn, $sql);  
@@ -49,13 +51,15 @@
                     <?php echo $r[0] ?>
                     </button>
                     <div class="links">
+
                     <a
-                        href="resources/cse/3rd-Sem/Notes/Notes 18CS31.pdf"
+                        
+                        href="<?php echo "{$path}" ?>"
                         download
                         ><img class="icon" src="images/download.svg" />Notes</a
                     >
                     <a
-                        href="resources/cse/3rd-Sem/Question Papers/18CS31.pdf"
+                        href="<?php echo "{$path1}" ?>"
                         download
                         ><img class="icon" src="images/download.svg" />Model
                         Question Paper</a

@@ -1,3 +1,13 @@
+<?php
+    session_start();
+    if(!isset($_SESSION["favcolor"])){
+        echo "<script>
+    window.location.href='login.html';
+    alert('YOU NEED TO LOGIN FIRST TO ACCESS THIS PAGE!!! ');
+    </script>";
+    exit();
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
