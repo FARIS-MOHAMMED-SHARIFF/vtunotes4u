@@ -61,3 +61,20 @@ body {
     color: #2691d9;
     text-decoration: none;
 }
+
+.flex {
+    display: flex;
+}
+
+.navbar {
+    font-size: 2rem;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    padding: 1rem;
+    color: black;
+    box-shadow: 0 1px 15px 1px rgba(0, 0, 0, 0.2);
+}
+.navbar > a {
+    color: black;
+}
