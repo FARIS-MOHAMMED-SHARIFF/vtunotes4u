@@ -38,22 +38,40 @@ if (!isset($_SESSION["favsport"])) {
             <h2>Choose Semester</h2>
             <ul class="semester flex">
                 <li class="semester-item">
-                    <a href="content.php?sem=3">3rd</a>
+                    <a href="content.php?sem=3">
+                        <div>3<span>rd</span></div>
+                        <div>Sem</div>
+                    </a>
                 </li>
                 <li class="semester-item">
-                    <a href="content.php?sem=4">4th</a>
+                    <a href="content.php?sem=4">
+                        <div>4<span>th</span></div>
+                        <div>Sem</div>
+                    </a>
                 </li>
                 <li class="semester-item">
-                    <a href="content.php?sem=5">5th</a>
+                    <a href="content.php?sem=5">
+                        <div>5<span>th</span></div>
+                        <div>Sem</div>
+                    </a>
                 </li>
                 <li class="semester-item">
-                    <a href="content.php?sem=6">6th</a>
+                    <a href="content.php?sem=6">
+                        <div>6<span>th</span></div>
+                        <div>Sem</div>
+                    </a>
                 </li>
                 <li class="semester-item">
-                    <a href="content.php?sem=7">7th</a>
+                    <a href="content.php?sem=7">
+                        <div>7<span>th</span></div>
+                        <div>Sem</div>
+                    </a>
                 </li>
                 <li class="semester-item">
-                    <a href="content.php?sem=8">8th</a>
+                    <a href="content.php?sem=8">
+                        <div>8<span>th</span></div>
+                        <div>Sem</div>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -67,6 +85,10 @@ if (!isset($_SESSION["favsport"])) {
         const links = document.querySelectorAll('.semester-item > a')
         for (let i = 0; i < links.length; i++) {
             links[i].href += `&branch=${branch}`
+            
+            const branchEle = document.createElement('div')
+            branchEle.innerText = branch.toUpperCase()
+            links[i].insertBefore(branchEle , links[i].children[0])
         }
     </script>
 </body>

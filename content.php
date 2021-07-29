@@ -25,7 +25,6 @@ $count = mysqli_num_rows($result);
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VtuNotes4U</title>
     <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 
 <body>
@@ -48,6 +47,7 @@ $count = mysqli_num_rows($result);
             ?>
                 <button class="accordion">
                     <?php echo $r[0] ?>
+                    <span class='arrow'></span>
                 </button>
                 <div class="links">
 
@@ -76,11 +76,6 @@ $count = mysqli_num_rows($result);
             })
         }
 
-        const queryString = window.location.search
-        const urlParams = new URLSearchParams(queryString)
-        const sem = urlParams.get('sem')
-        const branch = urlParams.get('branch')
-        console.log(sem, branch)
     </script>
 </body>
 
